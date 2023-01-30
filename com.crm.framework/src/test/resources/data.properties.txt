@@ -1,0 +1,7 @@
+url https://mg740test2.ballistixcrm.com/index.php
+username chethana.sh@automatesmb.com
+password bA$ufRA6u#at
+browser chrome
+
+url1 https://cgrproducts-dev.ballistixcrm.com/cgrproducts140123/--
+password1 WigitrU*ey+p$st3
