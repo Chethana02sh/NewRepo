@@ -30,9 +30,9 @@ public class AddOpportunityPage {
 	
 	@FindBy(id = "Potentials_editView_fieldName_amount") private WebElement priceEdtTxt;
 	
-	@FindBy(id = "s2id_autogen7") private WebElement selectStatusDropdn;
+//	@FindBy(id = "s2id_autogen7") private WebElement selectStatusDropdn;
 	
-	@FindBy(xpath = "//div[.='Won']")private WebElement selectStatusWon;
+//	@FindBy(xpath = "//div[.='Won']")private WebElement selectStatusWon;
 	
 //	@FindBy(xpath = "//td[contains(.,'Sales Stage')]/..//div[@id='s2id_autogen15']//span[.='Select an Option']")private WebElement selesStageDropdown;
 	
@@ -73,10 +73,10 @@ public class AddOpportunityPage {
 		
 	public void selectStatusStageLead(WebDriver driver)
 	{
-		selectStatusDropdn.click();
-		selectStatusWon.click();
+//		selectStatusDropdn.click();
+//		selectStatusWon.click();
 //		selesStageDropdown.click();
-		driver.findElement(By.xpath("//td[contains(.,'Sales Stage')]/..//div[@id='s2id_autogen15']//span[.='Select an Option']")).click();
+		driver.findElement(By.xpath("//td[contains(.,'Sales Stage')]/..//div[@id='s2id_autogen7']")).click();
 //		Point loc = ele.getLocation();
 //		int x = loc.getX();
 //		int y = loc.getY();
@@ -84,15 +84,15 @@ public class AddOpportunityPage {
 //		js.executeScript("window.scrollBy("+x+","+y+")");
 //		ele.click();
 		selectStageQualification.click();
-		WebElement ele1 = driver.findElement(By.xpath("//td[contains(.,'Lead Source')]/following-sibling::td/div"));
-		Point loc1 = ele1.getLocation();
-		int x1 = loc1.getX();
-		int y1 = loc1.getY();
-		JavascriptExecutor js1 = (JavascriptExecutor)driver;
-		js1.executeScript("window.scrollBy("+x1+","+y1+")");
-		ele1.click();
-	//	selectLeadSourceDropDown.click();
-		selectNoneFromSelectLeadSource.click();
+//		WebElement ele1 = driver.findElement(By.xpath("//td[contains(.,'Lead Source')]/following-sibling::td/div"));
+//		Point loc1 = ele1.getLocation();
+//		int x1 = loc1.getX();
+//		int y1 = loc1.getY();
+//		JavascriptExecutor js1 = (JavascriptExecutor)driver;
+//		js1.executeScript("window.scrollBy("+x1+","+y1+")");
+//		ele1.click();
+//	//	selectLeadSourceDropDown.click();
+//		selectNoneFromSelectLeadSource.click();
 		driver.findElement(By.xpath("//button[.='Save']")).click();
 	}
 	

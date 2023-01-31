@@ -3,9 +3,20 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.crm.createCampaigns.CreateCampaignTest"/>
-	<class name="com.crm.createCampaigns.EditCampaignTest"/>
-      <class name="com.crm.createCampaigns.DeleteCampaignTest"/>
+	  <class name="com.crm.createCampaigns.CreateCampaignTest"/>
+	  <class name="com.crm.contacts.CreateContactEditcontactDeleteContact"/>
+	  <class name="com.crm.organisation.CreateEditDeleteOrganisation"/>
+      <class name="com.crm.Opportunity.CreateEditDeleteOpportunity"/>
+      <class name="com.crm.ProjectOOPS.CreateEditDeleteProjectOoops"/>
+	  <class name="com.crm.Leads.CreateLeadEditLeadDeleteLead"/>
+	  <class name="com.crm.SalesProduct.CreateEditDeleteProduct"/>
+      <class name="com.crm.SalesContacts.CreateEditDeleteSalesContactTest"/>
+	  <class name="com.crm.SalesOrganisation.CreateEditDeleteOrganisationTest"/>
+ 	  <class name="com.crm.SupportTickets.AddEditDeleteTicket"/>
+      <class name="com.crm.inventoryContacts.CreateEditDeleteContactTest"/>    
+      <class name="com.crm.InventoryOrganisation.CreateEditDeleteOrganisationTest"/>  
+      <class name="com.crm.InventoryProducts.CreateEditDeleteProducts"/>
+      <class name="com.crm.inventoryVendors.CreateEditDeleteVendorTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

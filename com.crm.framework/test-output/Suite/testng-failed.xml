@@ -1,55 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.crm.genericUtilities.ItestListenerImtn"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.crm.createContacts.CreateContactsWithOrganisationTest">
+      <class name="com.crm.SalesProduct.CreateEditDeleteProduct">
         <methods>
           <include name="logoutFromAppln"/>
           <include name="closeDBconfig"/>
           <include name="loginToAppln"/>
           <include name="closeTheBrowser"/>
-          <include name="createContactsWithOrganisationTest"/>
+          <include name="createEditDeleteProduct"/>
           <include name="launchTheBrowser"/>
           <include name="dbConfig"/>
         </methods>
-      </class> <!-- com.crm.createContacts.CreateContactsWithOrganisationTest -->
-      <class name="com.crm.createOrganisation.CreateOrganizationWithIndustryAndTypeTest">
+      </class> <!-- com.crm.SalesProduct.CreateEditDeleteProduct -->
+      <class name="com.crm.Opportunity.CreateEditDeleteOpportunity">
         <methods>
           <include name="logoutFromAppln"/>
-          <include name="createOrganizationWithIndustryAndTypeTest"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="createEditDeleteOpportunity"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.Opportunity.CreateEditDeleteOpportunity -->
+      <class name="com.crm.createCampaigns.CreateCampaignTest">
+        <methods>
+          <include name="createCampaignTest"/>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.createCampaigns.CreateCampaignTest -->
+      <class name="com.crm.inventoryVendors.CreateEditDeleteVendorTest">
+        <methods>
+          <include name="createEditDeleteVendorTest"/>
+          <include name="logoutFromAppln"/>
           <include name="closeDBconfig"/>
           <include name="loginToAppln"/>
           <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
           <include name="dbConfig"/>
         </methods>
-      </class> <!-- com.crm.createOrganisation.CreateOrganizationWithIndustryAndTypeTest -->
-      <class name="com.crm.createOrganisation.ToCreateOrganisationTest">
+      </class> <!-- com.crm.inventoryVendors.CreateEditDeleteVendorTest -->
+      <class name="com.crm.organisation.CreateEditDeleteOrganisation">
         <methods>
           <include name="logoutFromAppln"/>
-          <include name="createOrganisationTest"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="createEditDeleteOrganisation"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.organisation.CreateEditDeleteOrganisation -->
+      <class name="com.crm.Leads.CreateLeadEditLeadDeleteLead">
+        <methods>
+          <include name="createLeadEditLeadDeleteLead"/>
+          <include name="logoutFromAppln"/>
           <include name="closeDBconfig"/>
           <include name="loginToAppln"/>
           <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
           <include name="dbConfig"/>
         </methods>
-      </class> <!-- com.crm.createOrganisation.ToCreateOrganisationTest -->
-      <class name="com.crm.createContacts.CreateContactsTest">
+      </class> <!-- com.crm.Leads.CreateLeadEditLeadDeleteLead -->
+      <class name="com.crm.SupportTickets.AddEditDeleteTicket">
+        <methods>
+          <include name="addEditDeleteTicket"/>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.SupportTickets.AddEditDeleteTicket -->
+      <class name="com.crm.SalesContacts.CreateEditDeleteSalesContactTest">
+        <methods>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="createEditDeleteSalesContactTest"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.SalesContacts.CreateEditDeleteSalesContactTest -->
+      <class name="com.crm.InventoryProducts.CreateEditDeleteProducts">
         <methods>
           <include name="logoutFromAppln"/>
           <include name="closeDBconfig"/>
           <include name="loginToAppln"/>
           <include name="closeTheBrowser"/>
-          <include name="createContactTest"/>
+          <include name="createEditDeleteProducts"/>
           <include name="launchTheBrowser"/>
           <include name="dbConfig"/>
         </methods>
-      </class> <!-- com.crm.createContacts.CreateContactsTest -->
+      </class> <!-- com.crm.InventoryProducts.CreateEditDeleteProducts -->
+      <class name="com.crm.ProjectOOPS.CreateEditDeleteProjectOoops">
+        <methods>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="createEditDeleteProjectOoops"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.ProjectOOPS.CreateEditDeleteProjectOoops -->
+      <class name="com.crm.contacts.CreateContactEditcontactDeleteContact">
+        <methods>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="createContact"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.contacts.CreateContactEditcontactDeleteContact -->
+      <class name="com.crm.inventoryContacts.CreateEditDeleteContactTest">
+        <methods>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="createEditDeleteContactTest"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.inventoryContacts.CreateEditDeleteContactTest -->
+      <class name="com.crm.SalesOrganisation.CreateEditDeleteOrganisationTest">
+        <methods>
+          <include name="logoutFromAppln"/>
+          <include name="createEditDeleteTest"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.SalesOrganisation.CreateEditDeleteOrganisationTest -->
+      <class name="com.crm.InventoryOrganisation.CreateEditDeleteOrganisationTest">
+        <methods>
+          <include name="logoutFromAppln"/>
+          <include name="closeDBconfig"/>
+          <include name="createEditDeleteOrganisationTest"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="launchTheBrowser"/>
+          <include name="dbConfig"/>
+        </methods>
+      </class> <!-- com.crm.InventoryOrganisation.CreateEditDeleteOrganisationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

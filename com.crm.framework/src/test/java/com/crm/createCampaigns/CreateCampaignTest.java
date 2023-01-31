@@ -4,10 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.crm.campaignObjectRepository.AddCampaignPage;
+import com.crm.campaignObjectRepository.CampaignDetailsPage;
 import com.crm.campaignObjectRepository.CampaignPage;
+import com.crm.campaignObjectRepository.CampaignVerificationPage;
 import com.crm.campaignObjectRepository.MenuPage;
 import com.crm.genericUtilities.BaseClass;
 
@@ -68,6 +71,24 @@ public class CreateCampaignTest extends BaseClass {
 		Assert.assertEquals(campName, CampaignName);
        eLib.writeDataIntoExcel("Campaign", 0, 1, campName);
 		
-		System.out.println("test case is pass");
+		Reporter.log("Campaign is created",true);
+		
+		//edit
+		CampaignVerificationPage campaignVerificationPage = new CampaignVerificationPage(driver);
+		campaignVerificationPage.editCampaign();
+
+		CampaignDetailsPage campaignDetailsPage = new CampaignDetailsPage(driver);
+		campaignDetailsPage.CampaignStatusDropdown();
+		campaignDetailsPage.enterCampaignStatusName(driver, "Completed");
+
+		addCampaignPage.getSaveBtn().click();
+
+		String campaignStatusName = campaignDetailsPage.enterTheCampaignStatusToVerify(driver, "Completed");
+
+		Assert.assertEquals(campaignStatusName, "Completed");
+		Reporter.log("Campaign is edited",true);
+		//delete
+		campaignVerificationPage.delete();
+		Reporter.log("Campaign is deleted");
 	}
 }

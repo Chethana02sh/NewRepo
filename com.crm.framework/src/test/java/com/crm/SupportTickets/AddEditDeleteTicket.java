@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.crm.SupportTicketsObjectRepo.AddTicketPage;
@@ -41,6 +42,7 @@ public class AddEditDeleteTicket extends BaseClass{
 		String CreatedTicketName = driver.findElement(By.xpath("//span[.='"+title+"']")).getText();
 		
 		Assert.assertEquals(title, CreatedTicketName);
+		Reporter.log("Ticket is created",true);
 		//edit
 		int randNum1 = jLib.getRandomNumber();
 		
@@ -53,7 +55,10 @@ public class AddEditDeleteTicket extends BaseClass{
 		String EditedTicketName = driver.findElement(By.xpath("//span[.='"+Newtitle+"']")).getText();
 		
 		Assert.assertEquals(Newtitle, EditedTicketName);
+		Reporter.log("Ticket is edited",true);
+		
 		//delete
 		ticketVerifyPage.delete();
+		Reporter.log("Ticket is deleted",true);
 	}
 }

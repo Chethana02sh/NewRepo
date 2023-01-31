@@ -30,7 +30,7 @@ public class CreateEditDeleteProducts extends BaseClass {
 		ProductPage productPage = new ProductPage(driver);	
 		productPage.addProduct();
 		
-		String productName = eLib.readDataFromExcel("Products", 1, 0)+randNum;
+		String productName = eLib.readDataFromExcel("Product", 1, 0)+randNum;
 		
 		AddProductPage addProductPage = new AddProductPage(driver);
 		addProductPage.addProductNameAndSave(productName);
@@ -46,7 +46,7 @@ public class CreateEditDeleteProducts extends BaseClass {
 		ProductVerifyPage productVerifyPage = new ProductVerifyPage(driver);
 		productVerifyPage.edit();
 		
-		String NewProductName = eLib.readDataFromExcel("Products", 1, 0)+randNum1;
+		String NewProductName = eLib.readDataFromExcel("Product", 1, 0)+randNum1;
 		
 		addProductPage.addProductNameAndSave(NewProductName);
 		

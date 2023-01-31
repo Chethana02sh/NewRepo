@@ -46,10 +46,12 @@ public class BaseClass
 	@BeforeClass
 	public void launchTheBrowser() throws Throwable
 	{
-		//		String BROWSER = System.getProperty("browser");
-		//		String URL = System.getProperty("url");
+	//			String BROWSER = System.getProperty("browser");
+	//			String URL = System.getProperty("url");
 		String BROWSER = fLib.getPropertKeyValue("browser");
 		String URL = fLib.getPropertKeyValue("url");
+	//	String BROWSER = fLib.getPropertKeyValue("browser");
+	//	String URL = fLib.getPropertKeyValue("url1");
 
 		if(BROWSER.equalsIgnoreCase("firefox"))
 		{
@@ -83,7 +85,9 @@ public class BaseClass
 	public void loginToAppln() throws Throwable
 	{
 		String USERNAME = fLib.getPropertKeyValue("username");
-		String PASSWORD = fLib.getPropertKeyValue("password");
+	String PASSWORD = fLib.getPropertKeyValue("password");
+//		String USERNAME = fLib.getPropertKeyValue("username1");
+//		String PASSWORD = fLib.getPropertKeyValue("password1");
 
 		LoginPage lpage=new LoginPage(driver);
 		lpage.loginToAppli(USERNAME, PASSWORD);
@@ -105,7 +109,7 @@ public class BaseClass
 	@AfterClass
 	public void closeTheBrowser()
 	{
-		//driver.quit();
+		driver.quit();
 		System.out.println("Browser successfully closed");
 	}
 //	/**
